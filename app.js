@@ -36,6 +36,8 @@ app.listen(process.env.PORT || 1337, () => console.log('webhook is listening'));
 app.post('/webhook', (req, res) => {
 
   // Parse the request body from the POST
+  console.log(req.body);
+  console.log(req);
   let body = req.body;
 
   // Check the webhook event is from a Page subscription
